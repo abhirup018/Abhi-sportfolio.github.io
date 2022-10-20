@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;1,300&family=Lobster&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    background-color: rgb(136, 255, 0);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'Lobster', cursive;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: blue; */
+    height: 50vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+    margin-top: 150px;
+    font-size: 15px;
+}
+
+.hello {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    margin-top: 23px;
+}
+
+.buttons {
+    margin-top: 34px;
+    font-size: 15px;
+}
+
+.btn{
+    padding: 9px 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 30px;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 11px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+
+}
+
+.devPic img {
+    /* width: 250px; */
+    height: 50vh;
+}
+
+.contactform{
+    
+    padding: 0 74px;
+    font-family: 'Lobster', cursive;
+    margin: 108px;
+}
+
+
+.contactform h1{
+    font-family: 'Combo', cursive;
+    /* text-align: center; */
+    /* padding: 92px 0; */
+
+}
+.contactform form div{
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 20vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+
+.contactform form{
+    margin: 30px 30px ;
+}
+
+#form-check{
+    flex-direction: row;
+
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.intro{
+    margin: 40px 98px;
+}
+
+.intro h2{
+    font-family: 'Combo', cursive;
+    margin: 23px;
+}
+
+.intro p{
+    font-family: 'Lobster', cursive; 
+    margin: 23px;
+}
+
+
+#emailHelp{
+    font-size: 9px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+.skillcontainer{
+        padding: 13px;
+}
+
+.skill{
+    width: 265px;
+    height: 8px;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+}  
+
+.hundred{
+    width: 265px;
+    height: 8px;
+    background-color: rgb(240, 117, 117);
+}
+
+.fifty{
+    width: 125px;
+    height: 8px;
+    background-color: orange;
+}
+
+.t5{
+    width: 75px;
+    height: 8px;
+    background-color: rgb(181, 220, 169);
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: block;
+}
+
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+
+.cross{
+    margin-left: 85px;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1515px) {
+    *{
+        /* background-color: lawngreen; */
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .contactform{
+        margin:  50px 8px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
